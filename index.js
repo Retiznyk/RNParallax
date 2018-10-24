@@ -9,7 +9,7 @@ import {
   Dimensions
 } from "react-native";
 
-const { height: SCREEN_HEIGHT } = Dimensions.get("window");
+const { height: SCREEN_HEIGHT, width: SCREEN_WIDTH } = Dimensions.get("window");
 
 const IS_IPHONE_X = SCREEN_HEIGHT === 812;
 const STATUS_BAR_HEIGHT = Platform.OS === "ios" ? (IS_IPHONE_X ? 44 : 20) : 0;
